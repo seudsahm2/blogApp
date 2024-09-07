@@ -3,6 +3,8 @@ from django.db import models
 from django.utils import timezone
 from django.urls import reverse
 
+from taggit.managers import TaggableManager
+
 # new django 5 feature
 # from django.db.models.functions import Now
 
@@ -39,6 +41,7 @@ class Post(models.Model):
     )
     objects = models.Manager()
     published = PublishManager()
+    tags = TaggableManager()
 
 
     class Meta:
