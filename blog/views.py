@@ -20,6 +20,7 @@ class PostListView(ListView):
     template_name = 'blog/post/list.html'
 
 
+
 # def post_list(request):
 #     post_list = Post.published.all()
 
